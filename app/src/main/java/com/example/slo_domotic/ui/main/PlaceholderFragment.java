@@ -52,13 +52,20 @@ public class PlaceholderFragment extends Fragment {
         binding = FragmentMainBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.sectionLabel;
-        pageViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView tempLabel = binding.TempLabel;
+        tempLabel.setText("Température : 22°C");
+        final TextView humLabel = binding.HumLabel;
+        humLabel.setText("humidité ambiante : 55%");
+        final TextView qualLabel = binding.QualLabel;
+        qualLabel.setText("Qualité de l'air : 26111");
+        final TextView lumLabel = binding.LumLabel;
+        qualLabel.setText("Luminosité: 7500");
+        /*pageViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                lumLabel.setText(s);
             }
-        });
+        });*/
         return root;
     }
 
