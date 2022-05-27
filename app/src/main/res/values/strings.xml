@@ -2,4 +2,5 @@
     <string name="app_name">SLO_Domotic</string>
     <string name="tab_text_1">Environnement</string>
     <string name="tab_text_2">LED RGB</string>
+    <string name="BROKER_IP">IP:PORT</string>
 </resources>
